@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <title>the-times-tabs demo</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <script src="../../../../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../../../../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../../../../bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="../../the-times-toolbar/the-times-toolbar.html">
+    <link rel="import" href="../the-times-tab.html">
+    <link rel="import" href="../the-times-tabs.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      #container {
+        max-width: 600px;
+      }
+
+      .vertical-section {
+        margin: 0 0 40px;
+      }
+    </style>
+  </head>
+  <body unresolved>
+    <div id="container" class="vertical-section-container centered">
+      <h3>Plain <code>the-times-tabs</code>.</h3>
+      <div class="vertical-section">
+        <the-times-tabs selected="0">
+          <the-times-tab>ITEM ONE</the-times-tab>
+          <the-times-tab>ITEM TWO</the-times-tab>
+          <the-times-tab>ITEM THREE</the-times-tab>
+        </the-times-tabs>
+      </div>
+
+      <h3>
+        The <code>scrollable</code> attribute causes the tabs to scroll, rather
+        than compress, when there is not enough space. Arrow buttons appear when
+        any of the tabs are not completely visible.
+      </h3>
+      <div class="vertical-section">
+        <the-times-tabs selected="0" scrollable>
+          <the-times-tab>NUMBER ONE ITEM</the-times-tab>
+          <the-times-tab>ITEM TWO</the-times-tab>
+          <the-times-tab>THE THIRD ITEM</the-times-tab>
+          <the-times-tab>THE ITEM FOUR</the-times-tab>
+          <the-times-tab>FIFTH</the-times-tab>
+          <the-times-tab>THE SIXTH TAB</the-times-tab>
+          <the-times-tab>NUMBER SEVEN</the-times-tab>
+          <the-times-tab>EIGHT</the-times-tab>
+          <the-times-tab>NUMBER NINE</the-times-tab>
+          <the-times-tab>THE TENTH</the-times-tab>
+          <the-times-tab>THE ITEM ELEVEN</the-times-tab>
+          <the-times-tab>TWELFTH ITEM</the-times-tab>
+        </the-times-tabs>
+      </div>
+
+      <h3>
+        Tab layout is effected by the writing direction of the surrounding area.
+      </h3>
+      <div class="vertical-section">
+        <div dir="rtl">
+          <the-times-tabs selected="0">
+            <the-times-tab>ITEM ONE</the-times-tab>
+            <the-times-tab>ITEM TWO</the-times-tab>
+            <the-times-tab>ITEM THREE</the-times-tab>
+          </the-times-tabs>
+          &nbsp;
+          <the-times-tabs selected="0" scrollable>
+            <the-times-tab>NUMBER ONE ITEM</the-times-tab>
+            <the-times-tab>ITEM TWO</the-times-tab>
+            <the-times-tab>THE THIRD ITEM</the-times-tab>
+            <the-times-tab>THE ITEM FOUR</the-times-tab>
+            <the-times-tab>FIFTH</the-times-tab>
+            <the-times-tab>THE SIXTH TAB</the-times-tab>
+            <the-times-tab>NUMBER SEVEN</the-times-tab>
+            <the-times-tab>EIGHT</the-times-tab>
+            <the-times-tab>NUMBER NINE</the-times-tab>
+            <the-times-tab>THE TENTH</the-times-tab>
+            <the-times-tab>THE ITEM ELEVEN</the-times-tab>
+            <the-times-tab>TWELFTH ITEM</the-times-tab>
+          </the-times-tabs>
+        </div>
+      </div>
+
+      <h3>
+        Tabs can be used in a <code>the-times-toolbar</code>.
+      </h3>
+      <div class="vertical-section">
+        <style is="custom-style">
+          .self-end {
+            /* This mixin (from iron-flex-layout) aligns the tabs to the
+               bottom of the toolbar. */
+            @apply(--layout-self-end);
+          }
+        </style>
+
+        <the-times-toolbar class="tall">
+          <the-times-tabs selected="0" class="bottom self-end" style="width: 300px;">
+            <the-times-tab>ITEM ONE</the-times-tab>
+            <the-times-tab>ITEM TWO</the-times-tab>
+          </the-times-tabs>
+        </the-times-toolbar>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+/* General styles */
+
+.module {
+  padding: 10px;
+}
+
+.module .module {
+  padding: 0;
+}
+
+.module > a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.module > a + a,
+the-times-card + the-times-card {
+  margin-top: 15px;
+}
+
+the-times-card {
+  max-width: 100%;
+}
+
+form {
+  margin: 15px;
+}
+
+form the-times-button {
+  float: right;
+  margin-top: 15px;
+}
