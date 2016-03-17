@@ -20,13 +20,13 @@
     "market": true
   },
   "images" : {
-    "list" : "images/list.png",
+    "list" : "themes/koapp-theme-the-times/images/list.png",
     "screenshots" : [
-      "images/screenshot01.png",
-      "images/screenshot02.png"
+      "themes/koapp-theme-the-times/images/screenshot01.png",
+      "themes/koapp-theme-the-times/images/screenshot02.png"
     ],
-    "popover" : "images/popover.png",
-    "banner" : "images/banner.png"
+    "popover" : "themes/koapp-theme-the-times/images/popover.png",
+    "banner" : "themes/koapp-theme-the-times/images/banner.png"
   },
   "defaultConfig": {
     "colors": {
