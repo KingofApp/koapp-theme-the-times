@@ -4,7 +4,6 @@
 
 <dom-module id="the-times-spinner">
   <template>
-    <!-- write your styles here -->
     <style>
       /*
       /**************************/
@@ -144,7 +143,7 @@
       .circle {
         box-sizing: border-box;
         height: 100%;
-        border-width: 3px; /* STROKEWIDTH */
+        border-width: var(--paper-spinner-stroke-width, 3px); /* STROKEWIDTH */
         border-style: solid;
         border-color: inherit;
         border-bottom-color: transparent !important;
@@ -220,7 +219,6 @@
         to { opacity: 0; }
       }
     </style>
-    <!-- end styles -->
 
     <!-- write your template here -->
     <div id="spinnerContainer" class-name="[[__computeContainerClasses(active, __coolingDown)]]">

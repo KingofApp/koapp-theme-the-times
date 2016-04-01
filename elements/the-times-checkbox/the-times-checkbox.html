@@ -4,7 +4,6 @@
 
 <dom-module id="the-times-checkbox">
   <template>
-    <!-- write your styles here -->
     <style>
       :host {
         display: inline-block;
@@ -103,7 +102,6 @@
         padding-left: var(--checkbox-label-spacing, 8px);
         white-space: normal;
         line-height: normal;
-        pointer-events: none;
         color: var(--checkbox-label-color, --primary-text-color);
       }
 
@@ -117,10 +115,6 @@
       }
 
       /* disabled state */
-      :host([disabled]) {
-        pointer-events: none;
-      }
-
       :host([disabled]) #checkbox {
         opacity: 0.5;
         border-color: var(--checkbox-unchecked-color, --primary-text-color);
@@ -140,7 +134,6 @@
         border-color: var(--checkbox-error-color, --error-color);
       }
     </style>
-    <!-- end styles -->
 
     <!-- write your template here -->
     <div id="checkboxContainer">
