@@ -4,7 +4,6 @@
 
 <dom-module id="the-times-radio-button">
   <template>
-    <!-- write your styles here -->
     <style>
       :host {
         display: inline-block;
@@ -70,7 +69,6 @@
         vertical-align: middle;
         margin-left: var(--radio-button-label-spacing, 10px);
         white-space: normal;
-        pointer-events: none;
         color: var(--radio-button-label-color, --primary-text-color);
       }
 
@@ -84,10 +82,6 @@
       }
 
       /* disabled state */
-      :host([disabled]) {
-        pointer-events: none;
-      }
-
       :host([disabled]) #offRadio {
         border-color: var(--radio-button-unchecked-color, --primary-text-color);
         opacity: 0.5;
@@ -103,7 +97,6 @@
         opacity: 0.65;
       }
     </style>
-    <!-- end styles -->
 
     <!-- write your template here -->
     <div id="radioContainer">
